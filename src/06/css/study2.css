@@ -1,0 +1,28 @@
+*{
+    font-size: 25px;
+    font-family: D2Coding;
+}
+
+span{
+    color : tomato !important;
+}
+
+#subject{
+    color : blue;
+}
+
+.content{
+    color : pink;
+}
+
+.content{
+    color : brown;
+}
+
+.info-ip{
+    color : red;
+}
+
+.font-8{
+    color : skyblue;
+}
