@@ -1,0 +1,164 @@
+@CSS
+
+	#스타일 형식
+	- 기본형 : 선택자 {속성1 : 속성값; 속성2 : 속성값;}
+	- 전체 선택자 : *{속성1: 속성값, ...}
+	- 타입 선택자 : 타입 {속성1: 속성값,...}
+	- class 선택자: .클래스명 {속성1: 속성값,...}
+	- id 선택자 : #아이디명{스타일 규칙}
+
+	#캐스케이딩
+	- 위에서 아래로 흐른다는 뜻. 즉, 계단식으로 적용된다는 의미로 사용.
+	- 선택자 여러 스타일이 적용될 때 스타일 충돌을 막기 위해 우선순위에 따라 적용할 스타일을 결정함.
+	
+	- 스타일 우선순위
+	- 스타일 상속
+
+	- 윈칙1 : 스타일 우선순위
+	- 사용자 스타일 - 제작자 스타일 - 브라우저 스타일
+	- !important - 인라인 스타일 - id 스타일 - 클래스 스타일 - 타입 스타일 (웬만하면 클래스 스타일 적용)
+
+@텍스트 스타일
+
+	#webFont
+	- 웹 문서 안에 글꼴 정보도 함께 저장했다가 사용하는 font
+
+	#font-family
+	- 
+	#font-size
+	- em
+	- rem
+	- ex
+	- px
+	- pt
+
+	#font-style
+	- 글자를 이텔릭체로 표시하는 속성
+
+	#font-weight
+	- 글자 굵기를 조절하는 속성
+
+	#Google web font
+	- https://fonts.google.com/
+	- 왼쪽에는 내가 적요하고자 하는 폰트 뷰어 화면
+	- 오른쪽은 내가 사용하고자 하는 폰트 사용 링크
+	- styles 숫자 : 폰트 굵기 지정할 수 있는 숫자
+	- Noto sans Korean <- 가장 standard 한 폰트
+	- 일반적인 폰트 weight는 400
+	  기본은 300, 400, 700
+	- 오른쪽의 <link>는 html  파일에 넣는 것
+	- @import는 css 파일에 넣는 것
+	- css에 넣은 후 CSS rules to specify families의 내용 에 맞게 적용.
+
+	#color 스타일
+	- 색조합표 검색해서도 사용 가능.
+
+	#text-align
+	- 텍스트 위치 정렬 (좌우)
+	#line-height
+	- 문단의 줄 간격 지정
+	- 기본적으로 글자는 바닥에 위치
+	-> block 설명과 같이 진행 예정
+
+	#text-decoration
+	- 밑줄x, 취소선, 밑줄, 영역 위 선 등
+	- 주로 <a>태그에 사용
+	
+	#text-shadow
+	- 글자에 그림자를 주는 효과
+	
+	#text-transform
+	- 대소문자를 바꿔줄 때 사용
+	
+	#letter-spacing, word-spacing
+	- 글자간 간격, 단어간 간격
+
+	#list-style-type 속성
+	- 순서 없는 목록의 불릿이나 순서 목록의 숫자를 바꾸는 속성
+
+	#표 스타일
+
+	#caption-side
+	- 캡션(설명글)은 기본으로 표 위쪽에 표시됨
+	- 이 속성을 이용해 아래쪽에 표시 가능
+
+	#border
+	- 표의 바깥 테두리와 셀 테두리 모두 지정해야 함.
+	- table, td, th에는 주지만, tr에는 border속성을 주지 않음. (셀단위로 border를 주게 되어 있음)
+	- border: 선의 굵기, 선의 모양, 선의 색상;
+
+	#border-collapse
+	-  표 테두리와 셀 테두리르 합칠것인지 결정 (셀간 여백 제거)
+
+@레이아웃을 구성하는 CSS 박스 모델
+
+	#블록 레벨 요소 (한 줄을 통채로 먹음)
+	- 요소를 삽입했을 때 혼자 한 줄을 차지하는 요소
+	- 요소의 너비가 100%
+	- margin 영역이 있음.
+	ex) <div>, <p> 등
+
+	#인라인 레벨 요소 (한 줄 내에서 공간을 먹음)
+	- 줄을 차지하지 않는 요소
+	- 화면에 표시되는 콘텐츠만큼만 영역을 차지하고 나머지 공간에는 다른 요소가 올 수 있음
+	- margin, contents 영역 설정이 없음.
+	- font 사이즈 기준
+	- 임의로 영역을 변경하고 싶을 경우 inline-block 속성값 활용
+	ex) <img>, <strong> 등
+	
+	※ input은 예외
+	- display 속성에 inline-block으로 설정
+	- inline과 block의 속성을 함께 가지고 있음. 즉, 콘텐츠 영역은 변경 가능하지만, margin 조절 불가
+
+	#box모델
+	- margin, border, padding, contents 영역
+	
+	#contents 영역
+	- 실제 콘텐츠 영역의 크기 지정
+	- width, height
+
+	#box-sizing, box-shadow 속성
+	- border-box : 테두리까지 포함하여 여백 설정 (contents 길이가 자동으로 조정됨, 여백 계산하기 훨씬 수월 함)
+	- 일반적으로 *{box-sizing : border-box;} 전체 선택자를 통해  적용
+
+	#box 모델의 값 지정 방향
+	- 4개 방향의 값을 한번에 지정할때는 방향, 순서를 지켜야 함.
+	top, right, bottom, left
+
+	#border
+	- border-width : 직접 굵기 입력 or thin;
+	- 일부 테두리만 변경하고 싶을 경우 border-left, top, bottom, right 사용
+	- border-color : 테두리 색상 지정
+	- border-radius : 테두리를 둥글게
+	- 영역 선택하여 테두리 모서리 조절 가능
+              (top-left, top-right, bottom-left, bottom-right)
+
+	#padding
+	- contents 영역내 콘텐츠 위치 관리
+	- 요소들 세로로 배치할 경우, 마진과 마진이 만날 떄는 마진이 큰 값으로 치우치게 됨! 주의!
+
+	#작성 순서는 margin, border, padding, contents 순서
+
+	#display
+	- 
+
+	#float 속성 (flex로 대체할 것)
+	- contents 위치 설정
+
+	#position
+	- left, right, bottom, top 요소의 위치를 설정
+	- static : 요소를 문서의 흐름에 맞추어 배치합니다. (기본 속성)
+	- relative : 이전 요소에 자연스럽게 연결해 배치하되, 위치를 지정할 수 있습니다.
+	- absolute : 원하는 위치를 지정해 배치합니다.
+	(부모 요소가 relative를 안 가지고 있을 경우 할아버지 요소를 기준으로 배치됨. 아무것도 없으면 body를 기준으로 배치 됨)
+	※인라인블록에서 relative를 주고, absolute로 원하는 div 영역도 배치가 가능함.
+
+	- fixed : 지정한 위체에 고정해 배치합니다. 화면에서 요소가 잘릴 수도 있습니다.
+
+	#margin
+	- 해당 영역의 여백 설정
+	- auot는 센터 설정
+	- position을 설정할 경우 marin이 먹히지 않음. (top, right, left, bottom으로 배치 해야 함)
+
+	#ctrl + shift + c
+	- development tool의 선택기능 바로 실행
