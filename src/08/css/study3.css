@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin : 0px;
+    padding : 0px;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1100px;
+    background-color: #dadada;
+}
+
+aside{
+    position: fixed;
+    right: 10px;
+    top: 18%;
+    width: 150px;
+    height: 600px;
+    background-color: plum;    
+}
+
+header {
+    /* flex 설정시 width 값이 100%로 자동설정 */
+    display: flex;
+    /* 해더 내 컨텐츠들이 양 끝으로 양분 후 내부 여백 일정해게 배정 */
+    justify-content: space-between;
+    align-items: center;
+
+    padding : 0px 50px;
+
+    height: 200px;
+    background-color: #faf83d;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    /* space-around는 좌우 여백이 동일 */
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 500px;
+}
+
+main {
+
+    height: 1000px;
+    background-color: #f83d3d;
+
+}
+
+footer {
+    height: 400px;
+    background-color: #141414;
+}
