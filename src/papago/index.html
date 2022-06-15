@@ -23,53 +23,95 @@
         </header>
         <main>
             <div class="d-container">
-                <div>
-                    <article>
-                        <div>
-                            <div>
+                <div class="article-container">
+                    <article class="article-left">
+                        <div class="article-header">
+                            <div class="article-header-left">
                                 <span>언어감지</span>
                                 <img src="images/index_items/combo_icon.png" alt="">
                             </div>
-                            <div>
-                                <img scr="images/index_items/convert_icon.png" alt="">
+                            <div class="article-header-right">
+                                <img src="images/index_items/convert_icon.png">
                             </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="article-body">
+                            <div class="article-body-textarea">
                                 <textarea placeholder="번역할 내용을 입력하세요."></textarea>
                             </div>
-                            <div>
-                                <span>0</span><span> / 5000</span>
+                            <div class="article-body-count">
+                                <!-- 앞뒤로 아무것도 없는 상태에서 중간에 띄워쓰기를 줘야 하면 &nbsp -->
+                                <span>0&nbsp</span><span> / 5000</span>
                             </div>
                         </div>
-                        <div>
-                            <div>
-                                <div>
+                        <div class="article-footer">
+                            <div class="article-footer-left">
+                                <div class="af-left-item">
                                     <img src="images/index_items/sound_icon.png" alt="">
                                 </div>
-                                <div>
+                                <div class="af-left-item">
                                     <img src="images/index_items/copy_icon.png" alt="">
                                 </div>
                             </div>
                             <button type="button">번역하기</button>
                         </div>
                     </article>
-                </div>
-                <div>
-                    <article>
-
+                    <article class="article-right">
+                        <div class="article-header">
+                            <div class="article-header-left">
+                                <span>영어</span>
+                                <img src="images/index_items/copy_icon_gray.png">
+                            </div>
+                        </div>
+                        <div class="article-body">
+                            <pre></pre>
+                        </div>
+                        <div class="article-footer">
+                            <div class="article-footer-left">
+                                <div class="af-left-item">
+                                    <img src="images/index_items/sound_icon_gray.png">
+                                </div>
+                                <div class="af-left-item">
+                                    <img src="images/index_items/copy_icon_gray.png">
+                                </div>
+                                <div class="af-left-item">
+                                    <img src="images/index_items/star_icon_gray.png">
+                                </div>
+                                <div class="af-left-item">
+                                    <img src="images/index_items/share_icon_gray.png">
+                                </div>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </div>
-            <section>
-
-            </section>
-            <section>
-
-            </section>
+            <div>
+                <section class="section-top">
+                    <img src="images/index_items/auto_completion.png">
+                </section>
+                <section class="section-bottom">
+                    <div class="label-url">
+                        <label for="">웹사이트 번역</label>
+                    </div>
+                    <div class="input-url">
+                        <input type="url" placeholder="URL을 입력하세요.">
+                        <div class="input-select-convert">
+                            <span>한국어로 번역</span>
+                            <img src="images/index_items/combo_icon.png">
+                        </div>
+                    </div>
+                    <div class="button-url">
+                        <button><img src="images/index_items/right_arrow.png"></button>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer>
-
+            <div class="d-container">
+                <img src="images/index_footer/footer1.png">
+            </div>
+            <div class="d-container">
+                <img src="images/index_footer/footer2.png">
+            </div>
         </footer>
     </div>
 </body>
