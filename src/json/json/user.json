@@ -1,0 +1,13 @@
+{
+    "code" : "1",
+    "msg" : "유저정보 로드 성공",
+    "data" : {
+        "usercode" : 20220621,
+        "username" : "junil",
+        "password" : "1234",
+        "name" : "김준일",
+        "email" : "123123@naver.com",
+        "role" : ["ROLE_ADMIN", "ROLE_USER"],
+        "provider" : "naver"
+    }
+}

@@ -1,0 +1,10 @@
+@JSON
+	#JSON(JavaScript Object Notation)
+	- 클라이언트와 서버가 통신할 때, 표준으로 사용되는 데이터 형식
+	- 시작과 끝은 "{}"
+	- key 값은 ""
+	- value 값은 : 뒤에 입력
+	- value 값에 또 다른 {} 입력 가능.
+
+	#XML
+	- 서블릿에서 주로 사용
